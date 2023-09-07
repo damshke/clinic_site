@@ -6,6 +6,7 @@
     <title>О нас</title>
     <meta charset="utf-8" name="description"
         content="Частная медицинская консультация, оказывающая услуги по профилю травматология-ортопедия">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -17,12 +18,40 @@
         </ul>
     </header>
     <main>
-      
+        <div id="map" class="map"></div>
+        <div class="contact-card">
+            <h1>Запись на прием</h1>
+            <p><strong>По номеру телефона:</strong>+7 904 439 41 50</p>
+            <p><strong>Адрес:</strong>пер. Почтовый, 9</p>
+            <p><strong>Часы работы:</strong><br>
+                Понедельник — с 9:00 до 12:00<br>
+                Вторник — с 8:00 до 12:00<br>
+                Среда — с 9:00 до 12:00<br>
+                Четверг — с 8:00 до 12:00<br>
+                Пятница — с 9:00 до 12:00<br>
+                Выходной — суббота и воскресенье</p>
+        </div>
     </main>
 
     <footer>
         <p>© 2023 — Все права защищены</p>
     </footer>
 </body>
+
+<script>
+    ymaps.ready(init);
+
+    function init() {
+
+        var myMap = new ymaps.Map("map", {
+            center: [50.409947, 41.750992], 
+            zoom: 16 
+        });
+
+        var myPlacemark = new ymaps.Placemark(myMap.getCenter());
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
 
 </html>
