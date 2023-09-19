@@ -110,11 +110,39 @@ h3 {
 
 /* section #3: certificates  */
 /* TO DO: */
-/* 1. сделать красивую галерею */
+/* 1. выровнять слайды
+   2. кнопки переключения слайдов по бокам, а не внизу  */
 
 .certificates {
     text-align: center;
 }
+
+.certificates__container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #2d801b;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
 /* footer */
 
