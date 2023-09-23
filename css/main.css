@@ -34,6 +34,10 @@ a {
    color: #2d801b; 
 }
 
+a:hover {
+    color: #4dc931;
+}
+
 header {
     position: fixed;
     top: 0;
