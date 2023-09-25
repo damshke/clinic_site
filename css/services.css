@@ -7,6 +7,11 @@ body {
     margin-right: 0px;
 }
 
+html {
+    overflow-y: scroll;
+}
+
+
 /* navigation styles */
 
 nav {
@@ -30,51 +35,55 @@ a {
     font-size: small;
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: lighter;
+}
+
 .link {
-   color: #2d801b; 
+    color: #2d801b;
+}
+
+a:hover {
+    color: #4dc931;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9); 
-    transition: background-color 0.3s ease; 
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease;
     z-index: 1000;
 }
 
 header.scroll {
-    background-color: rgba(255, 255, 255, 1); /* Fully opaque background when scrolling down */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* main */
-/* TO DO: */
-/* 1. добавить стили карточек */
-
-main {
-    background-color: #f2f2f2;
-    margin-top: 55px;
-}
 
 h1 {
     text-align: center;
     font-size: 40px;
+    margin-top: 60px;
 }
 
 .cards__container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     margin-right: 15px;
     margin-left: 15px;
 }
 
+
 .card {
     flex: 0 0 calc(50% - 10px);
     background-color: white;
-    padding: 10px;
-    margin-bottom: 20px; 
+    padding: 25px;
+    margin-bottom: 20px;
     margin-right: 10px;
     box-sizing: border-box;
 }
@@ -86,10 +95,17 @@ h1 {
     height: 49%;
 }
 
+section {
+    background-color: #f2f2f2;
+    margin-top: 50px;
+}
 
 /* footer */
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #171717;
     text-align: center;
     color: white;

@@ -5,7 +5,9 @@ body {
     margin-top: -8px;
     margin-left: 0px;
     margin-right: 0px;
+    padding: 0 calc(20px - (100vw - 100%)) 0 0;
 }
+
 
 /* navigation styles */
 
@@ -53,7 +55,10 @@ header.scroll {
 }
 
 /* section #1: about us */
-
+/* TO DO: */
+/* 1. кастомизировать полосу прокрутки */
+/* 2. выровнять меню на всех страницах */
+/* 3. косметические правки для корректного отображения в разных браузерах */
 button {
     color: white;
     background-color: #2d801b;
@@ -123,12 +128,12 @@ section {
 
 h2 {
     font-size: 40px;
-    margin-bottom: 90px;
     text-align: center;
 }
 
 h3 {
     font-size: 24px;
+    margin-bottom: auto;
 }
 
 /* section #3: certificates  */
@@ -168,8 +173,13 @@ h3 {
 }
 
 /* footer */
+/* TO DO:
+1. сделать одинаковый футер на всех страницах */
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #171717;
     text-align: center;
     color: white;
