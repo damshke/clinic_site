@@ -5,9 +5,16 @@ body {
     margin-top: -8px;
     margin-left: 0px;
     margin-right: 0px;
-    padding: 0 calc(20px - (100vw - 100%)) 0 0;
+    background-color: #f2f2f2;
 }
 
+main {
+    min-height: calc(100vh - 80px);
+}
+
+html {
+    overflow-y: scroll;
+}
 
 /* navigation styles */
 
@@ -33,7 +40,7 @@ a {
 }
 
 .link {
-   color: #2d801b; 
+    color: #2d801b;
 }
 
 a:hover {
@@ -44,14 +51,16 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9); 
-    transition: background-color 0.3s ease; 
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease;
     z-index: 1000;
 }
 
 header.scroll {
-    background-color: rgba(255, 255, 255, 1); /* Fully opaque background when scrolling down */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    background-color: rgba(255, 255, 255, 1);
+    /* Fully opaque background when scrolling down */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow effect */
 }
 
 /* section #1: about us */
@@ -73,6 +82,10 @@ button {
     border: none;
     margin-top: 60px;
     margin-left: 100px;
+}
+
+button:hover {
+    background-color: #4dc931;
 }
 
 .info {
@@ -113,10 +126,6 @@ section {
     background-color: #f2f2f2;
     margin-top: 50px;
 }
-
-/* section #2: workers */
-/* TO DO: */
-/* 1. установить список работников по левому краю */
 
 .workers {
     display: flex;
@@ -177,10 +186,13 @@ h3 {
 1. сделать одинаковый футер на всех страницах */
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     background-color: #171717;
     text-align: center;
     color: white;
+    height: 100%;
+    bottom: -18px;
+    height: 55px;
+    padding: 10px 0px;
 }
