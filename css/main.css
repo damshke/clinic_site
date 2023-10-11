@@ -57,10 +57,8 @@ header {
 }
 
 header.scroll {
-    background-color: rgba(255, 255, 255, 1);
-    /* Fully opaque background when scrolling down */
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow effect */
 }
 
 /* section #1: about us */
