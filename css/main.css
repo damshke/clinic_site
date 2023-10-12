@@ -187,16 +187,20 @@ h3 {
 .image-overlay img {
     max-width: 90%;
     max-height: 90%;
-    margin-top: 5%;
+    margin-top: 55px;
 }
 
 .close-button {
     position: absolute;
-    top: 55px;
+    top: 60px;
     right: 15px;
-    font-size: 30px;
-    color: #fff;
+    font-size: 26px;
+    color: #2d801b;
     cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 /* footer */

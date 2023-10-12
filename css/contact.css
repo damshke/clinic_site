@@ -71,7 +71,7 @@ header.scroll {
 
 .contact-card {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 155px 0px 0px 50px;
@@ -86,4 +86,21 @@ footer {
     text-align: center;
     color: white;
     margin-top: auto;
+}
+
+/* mobile version */
+
+@media (max-width: 1040px) {
+    .contact-card {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 820px) {
+    .contact-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
 }
