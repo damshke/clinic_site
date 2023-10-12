@@ -111,6 +111,13 @@ footer {
 }
 
 /* mobile version  */
-/* TO DO: */
-/* 1. отображение карточек друг под другом */
-/* 2. сворачивающееся меню? */
+
+@media (max-width: 600px) {
+    .cards__container {
+        flex-direction: column;
+    }
+
+    .card__section {
+        width: 100%;
+    }
+}
