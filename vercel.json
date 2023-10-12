@@ -1,0 +1,42 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "public/js/*.js",
+        "use": "@vercel/static-build",
+        "config": { "zeroConfig": true }
+      },
+      {
+        "src": "public/css/*.css",
+        "use": "@vercel/static-build",
+        "config": { "zeroConfig": true }
+      },
+      {
+        "src": "public/*.html",
+        "use": "@vercel/static-build",
+        "config": { "zeroConfig": true }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/public/js/(.*)",
+        "dest": "/public/js/$1"
+      },
+      {
+        "src": "/public/css/(.*)",
+        "dest": "/public/css/$1"
+      },
+      {
+        "src": "/public/(.*\\.html)",
+        "dest": "/public/$1"
+      },
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/public/$1"
+      }
+    ]
+  }
+  
