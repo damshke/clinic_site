@@ -105,7 +105,8 @@ section {
 
 footer {
     background-color: #171717;
-    text-align: center;
+    text-align: left;
+    padding-left: 30px;
     color: white;
     margin-top: auto;
 }

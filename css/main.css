@@ -207,7 +207,8 @@ h3 {
 
 footer {
     background-color: #171717;
-    text-align: center;
+    padding-left: 30px;
+    text-align: left;
     color: white;
     margin-top: auto;
 }
